@@ -1,0 +1,22 @@
+{
+  "name": "gulp-tsc-boilerplate",
+  "version": "1.0.0",
+  "description": "Demo about using typescript compiler in a gulp setup",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-uglify": "^1.5.3",
+    "require-dir": "^0.3.0",
+    "tsproject": "^1.2.0",
+    "typescript": "^1.8.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
