@@ -11,10 +11,15 @@ var exec = require('child_process').exec;
 function buildScript(project, watch, callback) {
 
     var outFile = buildPath(config.scripts.dest) + 'main.js';
+    
+    /* Here's our typescript compiler command, which is to be executed in terminal
+    *  project-parameter points to the directory in which our tsconfig.json can be found.
+    */
     var cmd = 'node_modules\\.bin\\tsc -p ' + project + ' --outFile ' + outFile;
-    if (watch) {
+    
+    if (watch)
        cmd = cmd + ' -w';
-    }
+    
     var child = exec(cmd);
     child.stdout.pipe(process.stdout);
     child.stdout.on('data', function(chunk) {
@@ -26,7 +31,6 @@ function buildScript(project, watch, callback) {
         }
         if (msgAsString.indexOf('error') > -1) {
             console.log('TypeScript compilation failed.');
-            //handleErrors.showError('TypeScript compilation failed.');
         }
     });
     child.stderr.pipe(process.stderr);

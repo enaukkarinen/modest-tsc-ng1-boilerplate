@@ -1,27 +1,14 @@
 {
     "compilerOptions": {
         "module": "amd",
-        "target": "es5",
-        "noResolve": false,
-        "declaration": true,
-        "diagnostics": true
+        "moduleResolution":"node",
+        "target":"es5",
+        "sourceMap": true,
+        "inlineSources": true,
+        "pretty": true
     },
     "filesGlob": [
         "./**/*.ts",
         "!../../node_modules/**/*.ts"
-    ],
-    "bundles": {
-        "app": {
-            "files": [
-                "./main.ts"
-            ]
-        },
-        "components": {
-            "config": {
-                "declaration": true,
-                "outDir": "./bundles",
-                "minify": true
-            }
-        }
-    }
+    ]
 }
