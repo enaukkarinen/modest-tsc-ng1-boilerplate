@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "del": "^2.2.0",
+    "express": "^4.13.4",
     "fs": "0.0.2",
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^1.8.0",
@@ -17,7 +18,10 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-task-listing": "^1.0.1",
     "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
     "gutil": "^1.6.4",
+    "http": "0.0.0",
+    "morgan": "^1.7.0",
     "require-dir": "^0.3.0",
     "tsproject": "^1.2.0",
     "typescript": "^1.8.9"

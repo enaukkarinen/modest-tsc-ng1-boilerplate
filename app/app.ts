@@ -3,7 +3,8 @@ import "./templates";
 import "./features/home/home";
 
 angular.module("app", [
-  "app.templates"
+  "app.templates",
+  "app.home"
   ])
  .config(['$stateProvider', '$urlRouterProvider', function($routeProvider) {
      $routeProvider.
