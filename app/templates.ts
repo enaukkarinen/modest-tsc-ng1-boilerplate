@@ -1,2 +1,2 @@
-angular.module("app.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("index.html","<html><head></head><body ng-app=app ng-strict-di><div ng-view></div><script src=lib.js></script><script src=main.js></script></body></html>");
+angular.module("app.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("index.html","<html><head></head><body ng-app=app ng-strict-di><div ng-view></div><script src=js/lib.js></script><script src=js/main.js></script></body></html>");
 $templateCache.put("features/home/home.html","<h2>Home</h2><p>a lot to do here...</p>");}]);

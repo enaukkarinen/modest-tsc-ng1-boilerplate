@@ -2,10 +2,13 @@
 
 module.exports = {
     'scripts': {
-        'src' : [
+        'src': [
             'app/main.ts',
         ], 
-        'dest': 'js/'
+        'dest': 'js/',
+      vendor: [
+      './node_modules/angular/angular.js'
+      ]
     },
     'templates': {
       'html': './app/**/*.html',
