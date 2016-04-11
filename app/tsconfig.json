@@ -7,12 +7,7 @@
         "inlineSources": true,
         "pretty": true
     },
-    "filesGlob": [
-        "./**/*.ts",
-        "!../../node_modules/**/*.ts"
-    ],
-     "exclude": [
-        "typings/main.d.ts",
-        "typings/main"
+    "files": [
+        "app.ts", "app.bootstrap.ts"
     ]
 }

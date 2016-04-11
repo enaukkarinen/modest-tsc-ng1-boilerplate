@@ -7,7 +7,9 @@ module.exports = {
         ], 
         'dest': 'js/',
       vendor: [
-      './node_modules/angular/angular.js'
+      './node_modules/almond/almond.js',
+      './node_modules/angular/angular.js',
+      './node_modules/angular-route/angular-route.js'
       ]
     },
     'templates': {
