@@ -10,5 +10,9 @@
     "filesGlob": [
         "./**/*.ts",
         "!../../node_modules/**/*.ts"
+    ],
+     "exclude": [
+        "typings/main.d.ts",
+        "typings/main"
     ]
 }

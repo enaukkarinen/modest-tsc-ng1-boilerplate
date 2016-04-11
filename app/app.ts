@@ -1,18 +1,18 @@
 
-import {Calculator} from './features/calculator';
+import "./templates";
+import "./features/home/home";
 
-export class App {
+angular.module("app", [
+  "app.templates"
+  ])
+ .config(['$stateProvider', '$urlRouterProvider', function($routeProvider) {
+     $routeProvider.
+      when('/home', {
+        templateUrl: 'features/home/home.html',
+        controller: 'HomeController'
+      }).
+      otherwise({
+        redirectTo: '/home'
+      });
+}]);
 
-    calculator: Calculator;
-
-    constructor() {
-        this.calculator = new Calculator();
-        console.log('App instantiated');
-
-    }
-
-}
-
-(function() {
-    new App();
-})();
