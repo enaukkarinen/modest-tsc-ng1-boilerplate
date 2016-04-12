@@ -6,10 +6,7 @@ export function start() {
 
     angular.element(document).ready( () => {
 
-        angular.module("app", [
-        "ngRoute",
-        "app.templates"
-        ])
+        angular.module("app")
         .config(['$routeProvider', function($routeProvider) {
             $routeProvider.
             when('/home', {
