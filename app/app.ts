@@ -11,7 +11,8 @@ export function start() {
             $routeProvider.
             when('/home', {
                 templateUrl: 'features/home/home.html',
-                controller: 'HomeController'
+                controller: 'HomeController',
+                controllerAs: 'home'
             }).
             otherwise({
                 redirectTo: '/home'

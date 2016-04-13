@@ -1,8 +1,8 @@
 
 class HomeController {
-	title: string;
+	message: string;
 	constructor () {
-        this.title = 'My App';
+        this.message = 'a lot to do here...';
 	}
 }
 

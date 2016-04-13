@@ -1,2 +1,2 @@
-angular.module("app.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("index.html","<html><head></head><body><div ng-view></div><script src=js/lib.js></script><script src=js/main.js></script></body></html>");
-$templateCache.put("features/home/home.html","<h2>Home</h2><p>a lot to do here...</p>");}]);export {};
+angular.module("app.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("index.html","<html><head><link rel=stylesheet type=text/css href=css/lib.css><link rel=stylesheet type=text/css href=css/styles.css></head><body><div ng-view></div><script src=js/lib.js></script><script src=js/main.js></script></body></html>");
+$templateCache.put("features/home/home.html","<h2>Home</h2><p>{{home.message}}</p>");}]);export {};

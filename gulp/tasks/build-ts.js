@@ -1,8 +1,6 @@
 'use strict';
 var config = require('../config');
 var gulp = require('gulp');
-var buildPath = require('../utils/buildPath');
-var uglify = require('gulp-uglify');
 var fs = require('fs');
 var sourcemaps = require('gulp-sourcemaps');
 var exec = require('child_process').exec;
@@ -10,7 +8,7 @@ var exec = require('child_process').exec;
 
 function buildScript(project, watch, callback) {
 
-    var outFile = buildPath(config.scripts.dest) + 'main.js';
+    var outFile = config.dev.root + config.scripts.dest + 'main.js';
     
     /* Here's our typescript compiler command, which is to be executed in terminal
     *  project-parameter points to the directory in which our tsconfig.json can be found.
@@ -45,19 +43,11 @@ function buildScript(project, watch, callback) {
     });
 }
 
-gulp.task('build-ts', [], function (callback) {
+gulp.task('build-ts', ['templates'], function (callback) {
     buildScript('app', false, callback);
 });
 
-function minifyScript(project) {
-    var inputFile = buildPath(config.scripts.dest) + 'main.js';
-    return gulp.src(inputFile)
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(config.dist.root + config.scripts.dest));
-}
-
-gulp.task('minify-ts', [], function () {
-   return minifyScript('app');
+gulp.task('watch-ts', ['templates'], function (callback) {
+    buildScript('app', true, callback);
 });
+
