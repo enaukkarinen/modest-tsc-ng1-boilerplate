@@ -1,8 +1,10 @@
 {
   "name": "gulp-tsc-boilerplate",
+  "repository": {
+      "url": "https://github.com/enaukkarinen/modest-tsc-ng1-boilerplate"
+  },
   "version": "1.0.0",
-  "description": "Demo about using typescript compiler in a gulp setup",
-  "main": "index.js",
+  "description": "Demo for using typescript compiler in a gulp setup",
   "dependencies": {
     "almond": "^0.3.2",
     "angular": "^1.5.3",
