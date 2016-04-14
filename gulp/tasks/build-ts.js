@@ -10,8 +10,10 @@ function buildScript(project, watch, callback) {
 
     var outFile = config.dev.root + config.scripts.dest + 'main.js';
     
-    /* Here's our typescript compiler command, which is to be executed in terminal
-    *  project-parameter points to the directory in which our tsconfig.json can be found.
+    /* 
+    * Here's our typescript compiler command.
+    * p-parameter points to the project folder with the tsconfig.json.
+    * outFile points to the output file for the compiled bundle.
     */
     var cmd = 'node_modules\\.bin\\tsc -p ' + project + ' --outFile ' + outFile;
     
