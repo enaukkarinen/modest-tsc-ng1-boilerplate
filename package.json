@@ -1,7 +1,7 @@
 {
   "name": "gulp-tsc-boilerplate",
   "repository": {
-      "url": "https://github.com/enaukkarinen/modest-tsc-ng1-boilerplate"
+    "url": "https://github.com/enaukkarinen/modest-tsc-ng1-boilerplate"
   },
   "version": "1.0.0",
   "description": "Demo for using typescript compiler in a gulp setup",
@@ -13,6 +13,7 @@
     "jquery": "^2.2.3"
   },
   "devDependencies": {
+    "concurrently": "^2.0.0",
     "del": "^2.2.0",
     "express": "^4.13.4",
     "fs": "0.0.2",
@@ -37,7 +38,12 @@
     "typescript": "^1.8.9"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run dev\" \"npm run express\"",
+    "express": "node server.js",
+    "dev": "gulp watch",
+    "clean": "rimraf dist",
+    "postinstall": "typings install",
+    "docs": "./node_modules/.bin/typedoc --options typedoc.json --exclude '**/*.spec.ts' ./src/"
   },
   "author": "",
   "license": "ISC"
