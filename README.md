@@ -23,6 +23,6 @@
 
 ##### Add new dependencies
 - If you look in the gulp/config.js you'll see a list of vendor paths pointing to node_modules folder. 
-- To add new dependencies, just install them through npm by running `npm install --save <new_dependency>`, and add a new filepath in the config.js. 
+- To add new dependencies, just install them through npm by running `npm install --save <new_dependency>`, and add a new filepath in  gulp/config.js. 
 - Notice that JS and CSS dependencies are maintained separately.
  
