@@ -27,5 +27,6 @@
 - Notice that JS and CSS dependencies are maintained separately.
  
 ####References
-- ["With latest TypeScript, you may not need Webpack" by @vivainio](https://medium.com/@vivainio/with-latest-typescript-you-may-not-need-webpack-417d2ef0e773#.alctiog2l)
+- [With latest TypeScript, you may not need Webpack by @vivainio](https://medium.com/@vivainio/with-latest-typescript-you-may-not-need-webpack-417d2ef0e773#.alctiog2l)
 - [What's new in TypeScript](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript)
+- [RequireJS docs about Almond](http://requirejs.org/docs/faq-optimization.html)
