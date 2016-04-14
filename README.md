@@ -4,8 +4,8 @@
 
 - This boilerplate uses the TypeScript compiler directly to bundle files into a single file with AMD-modules. 
 - `tsc -p app --outFile ' + outFile dev/js/main.js`
-- The bundle includes a small (1kb when minified) AMD API shim called [Almond](https://github.com/requirejs/almond). 
 - Unscientific benchmarks suggest this approach to be considerably faster than Browserify or Webpack.
+- The bundle includes a small (1kb when minified) AMD API shim called [Almond](https://github.com/requirejs/almond). 
 - The essential stylesheet, template and watch related tasks you would except in a boilerplate are also included. Test runners, linting etc. are left out to avoid bloating the repository too much.
  
 
