@@ -4,8 +4,10 @@
 
 This boilerplate uses the TypeScript compiler directly to bundle files into a single file with AMD-modules.
 
-`tsc -p app --outFile ' + outFile dev/js/main.js`
+`tsc -p app --outFile dev/js/main.js`
 
+The tsc command above has two parameters. The first one points to our project folder with the tsconfig.json. The outFile parameter defines the output file for the compiled bundle.
+ 
 Unscientific benchmarks suggest this approach to be considerably faster than Browserify or Webpack. 
 
 The bundle includes a small (1kb when minified) AMD API shim called [Almond](https://github.com/requirejs/almond). 
