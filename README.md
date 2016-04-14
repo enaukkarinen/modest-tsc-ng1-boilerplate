@@ -19,4 +19,10 @@
 - By default the application is build into dev folder un-minified and with sourcemaps.
 - To get you application production ready, just run `gulp minify`. Note: this task expects you to have all of your html, js and css already in the dev folder.
 - Alternatively, you can run `gulp minify-js` and `gulp minify-css`.
-- Notice that the minified files end up in dist folder.
+- Notice that the minified files end up in dist folder.c
+
+##### Add new dependencies
+- If you look in the gulp/config.js you'll see a list of vendor paths pointing to node_modules folder. 
+- To add new dependencies, just install them through npm by running `npm install --save <new_dependency>`, and add a new filepath in the config.js. 
+- Notice that JS and CSS dependencies are maintained separately.
+ 
