@@ -34,16 +34,15 @@
     "http": "0.0.0",
     "morgan": "^1.7.0",
     "require-dir": "^0.3.0",
-    "tsproject": "^1.2.0",
     "typescript": "^1.8.9"
   },
   "scripts": {
     "start": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run dev\" \"npm run express\"",
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
     "express": "node server.js",
-    "dev": "gulp watch",
-    "clean": "rimraf dist",
-    "postinstall": "typings install",
-    "docs": "./node_modules/.bin/typedoc --options typedoc.json --exclude '**/*.spec.ts' ./src/"
+    "dev": "node ./node_modules/gulp/bin/gulp.js watch",
+    "minify": "node ./node_modules/gulp/bin/gulp.js minify",
+    "clean": "node ./node_modules/gulp/bin/gulp.js clean"
   },
   "author": "",
   "license": "ISC"
