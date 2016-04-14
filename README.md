@@ -6,3 +6,11 @@
 
 - I've also included the essential stylesheet and template related tasks you would except from a boilerplate. I tried not to bloat this repository too much, so the test runners, linting etc. are left out.
  
+
+### Get started
+
+- You need to have npm and node installed
+- If you don't have gulp installed as a global package, you can get by using the defined npm scripts, but I would definitely advice installing gulp. To get a list of available gulp tasks, just run `gulp`.
+- To install packages, run `npm install`
+- To build the app, run `npm build`
+- To start to application, run `npm start` and navigate to `localhost:7203` in your browser. 
