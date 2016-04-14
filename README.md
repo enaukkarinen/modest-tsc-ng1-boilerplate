@@ -10,7 +10,7 @@
 ### Getting started
 
 - You need to have npm and node installed
-- If you don't have gulp installed as a global package, you can get by by using the defined npm scripts, but I would definitely advice installing gulp. To get a list of available gulp tasks, just run `gulp`.
+- If you don't have gulp installed as a global package, you can get by by using the defined npm scripts, but I would definitely advice installing [gulp](https://www.npmjs.com/package/gulp). To get a list of available gulp tasks, just run `gulp`.
 - To install packages, run `npm install`
 - To build the app, run `npm build`
 - To start the application, run `npm start` and navigate to `localhost:7203` in your browser. 
