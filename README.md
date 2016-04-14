@@ -1,8 +1,8 @@
-# Modest Typescript-Angular 1.x Boilerplate
+# Modest TypeScript-Angular 1.x Boilerplate
 
 ### Summary
 
-- This boilerplate uses the typescript compiler to bundle files into a single file with AMD JS-modules. The bundle includes a small (1kb when minified) AMD API shim called [Almond](https://github.com/requirejs/almond). This approach in considerably faster than any Browserify or Webpack builds I've encountered.
+- This boilerplate uses the TypeScript compiler to bundle files into a single file with AMD JS-modules. The bundle includes a small (1kb when minified) AMD API shim called [Almond](https://github.com/requirejs/almond). This approach in considerably faster than any Browserify or Webpack builds I've encountered.
 
 - I've also included the essential stylesheet, template and watch related tasks you would except from a boilerplate. I tried not to bloat this repository too much, so the test runners, linting etc. are left out.
  
@@ -26,3 +26,6 @@
 - To add new dependencies, just install them through npm by running `npm install --save <new_dependency>`, and add a new filepath in  gulp/config.js. 
 - Notice that JS and CSS dependencies are maintained separately.
  
+####References
+- ["With latest TypeScript, you may not need Webpack" by @vivainio](https://medium.com/@vivainio/with-latest-typescript-you-may-not-need-webpack-417d2ef0e773#.alctiog2l)
+- [What's new in TypeScript](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript)
