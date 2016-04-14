@@ -14,3 +14,9 @@
 - To install packages, run `npm install`
 - To build the app, run `npm build`
 - To start to application, run `npm start` and navigate to `localhost:7203` in your browser. 
+
+##### Minify your app
+- By default the application is build into dev folder un-minified and with sourcemaps.
+- To get you application production ready, just run `gulp minify`. Note: this task expects you to have all of your html, js and css already in the dev folder.
+- Alternatively, you can run `gulp minify-js` and `gulp minify-css`.
+- Notice that the minified files end up in dist folder.
