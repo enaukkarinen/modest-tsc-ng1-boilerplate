@@ -18,12 +18,12 @@ The essential stylesheet, template and watch related tasks you would except in a
 - You need to have npm and node installed
 - If you don't have gulp installed as a global package, you can get by by using the defined npm scripts, but I would definitely advice installing [gulp](https://www.npmjs.com/package/gulp). To get a list of available gulp tasks, just run `gulp`.
 - To install packages, run `npm install`
-- To build the app, run `npm build`
+- To build the app, run `npm run build`
 - To start the application, run `npm start` and navigate to `localhost:7203` in your browser. 
 
 ##### Minifying your app
 - By default the application is build into dev folder un-minified and with sourcemaps.
-- To get your application production ready, just run `gulp minify`. Note: this task expects you to have all of your html, js and css already in the dev folder.
+- To get your application production ready, just run `npm run minify` or `gulp minify`. Note: this task expects you to have all of your html, js and css already in the dev folder.
 - Alternatively, you can run `gulp minify-js` and `gulp minify-css`.
 - Notice that the minified files end up in dist folder.
 
