@@ -6,7 +6,7 @@ var gutil = require('gulp-util');
 
 gulp.task('clean', function () {
     
-    del([config.dev.root, config.dist.root]).then(paths => {
+    del([config.dev.root, config.dist.root]).then(function(paths) {
         gutil.log(gutil.colors.blue('deleted dev and dist folders.'));
     });
 });
