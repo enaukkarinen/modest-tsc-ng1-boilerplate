@@ -9,17 +9,17 @@ var exec = require('child_process').exec;
 function buildScript(project, watch, callback) {
 
     var outFile = config.dev.root + config.scripts.dest + 'main.js';
-    
-    /* 
+
+    /*
     * Here's our typescript compiler command.
     * p-parameter points to the project folder with the tsconfig.json.
     * outFile points to the output file for the compiled bundle.
     */
-    var cmd = 'node_modules\\.bin\\tsc -p ' + project + ' --outFile ' + outFile;
-    
+    var cmd = 'node_modules/.bin/tsc -p ' + project + ' --outFile ' + outFile;
+
     if (watch)
        cmd = cmd + ' -w';
-    
+
     var child = exec(cmd);
     child.stdout.pipe(process.stdout);
     child.stdout.on('data', function(chunk) {
