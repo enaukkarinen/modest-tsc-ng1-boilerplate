@@ -1,49 +1,47 @@
 {
-  "name": "gulp-tsc-boilerplate",
-  "repository": {
-    "url": "https://github.com/enaukkarinen/modest-tsc-ng1-boilerplate"
-  },
-  "version": "1.0.0",
-  "description": "Demo for using typescript compiler in a gulp setup",
-  "dependencies": {
-    "almond": "^0.3.2",
-    "angular": "^1.5.3",
-    "angular-route": "^1.5.3",
-    "bootstrap": "^3.3.6",
-    "jquery": "^2.2.3"
-  },
-  "devDependencies": {
-    "concurrently": "^2.0.0",
-    "del": "^2.2.0",
-    "express": "^4.13.4",
-    "fs": "0.0.2",
-    "gulp": "^3.9.1",
-    "gulp-angular-templatecache": "^1.8.0",
-    "gulp-changed": "^1.3.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-insert": "^0.5.0",
-    "gulp-less": "^3.0.5",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-minify-html": "^1.0.6",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-task-listing": "^1.0.1",
-    "gulp-uglify": "^1.5.3",
-    "gulp-util": "^3.0.7",
-    "gutil": "^1.6.4",
-    "http": "0.0.0",
-    "morgan": "^1.7.0",
-    "require-dir": "^0.3.0",
-    "typescript": "^1.8.9"
-  },
-  "scripts": {
-    "start": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run dev\" \"npm run express\"",
-    "build": "node ./node_modules/gulp/bin/gulp.js build",
-    "express": "node server.js",
-    "dev": "node ./node_modules/gulp/bin/gulp.js dev",
-    "minify": "node ./node_modules/gulp/bin/gulp.js minify",
-    "clean": "node ./node_modules/gulp/bin/gulp.js clean"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "gulp-tsc-boilerplate",
+    "repository": {
+        "url": "https://github.com/enaukkarinen/modest-tsc-ng1-boilerplate"
+    },
+    "version": "1.0.0",
+    "description": "Demo for using typescript compiler in a gulp setup",
+    "devDependencies": {
+        "almond": "^0.3.2",
+        "angular": "^1.5.3",
+        "angular-route": "^1.5.3",
+        "bootstrap": "^3.3.6",
+        "concurrently": "^2.0.0",
+        "del": "^2.2.0",
+        "express": "^4.13.4",
+        "fs": "0.0.2",
+        "gulp": "^3.9.1",
+        "gulp-angular-templatecache": "^1.8.0",
+        "gulp-changed": "^1.3.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-insert": "^0.5.0",
+        "gulp-less": "^3.0.5",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-minify-html": "^1.0.6",
+        "gulp-rename": "^1.2.2",
+        "gulp-sourcemaps": "^1.6.0",
+        "gulp-task-listing": "^1.0.1",
+        "gulp-uglify": "^1.5.3",
+        "gulp-util": "^3.0.7",
+        "gutil": "^1.6.4",
+        "http": "0.0.0",
+        "jquery": "^2.2.3",
+        "morgan": "^1.7.0",
+        "require-dir": "^0.3.0",
+        "typescript": "^1.8.9"
+    },
+    "scripts": {
+        "start": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run dev\" \"npm run express\"",
+        "build": "node ./node_modules/gulp/bin/gulp.js build",
+        "express": "node server.js",
+        "dev": "node ./node_modules/gulp/bin/gulp.js dev",
+        "minify": "node ./node_modules/gulp/bin/gulp.js minify",
+        "clean": "node ./node_modules/gulp/bin/gulp.js clean"
+    },
+    "author": "",
+    "license": "ISC"
 }

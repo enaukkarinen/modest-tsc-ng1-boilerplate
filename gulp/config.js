@@ -7,11 +7,11 @@ module.exports = {
         ],
         'dest': 'js/',
         'vendor': [
-            './node_modules/almond/almond.js',
             './node_modules/angular/angular.js',
             './node_modules/angular-route/angular-route.js',
             './node_modules/jquery/dist/jquery.js',
-            './node_modules/bootstrap/dist/js/bootstrap.js'
+            './node_modules/bootstrap/dist/js/bootstrap.js',
+            './node_modules/almond/almond.js'// "It's a good idea to bundle almond.js last, to avoid third party libraries trying to expose themselves as amd modules"
         ]
     },
     'templates': {
