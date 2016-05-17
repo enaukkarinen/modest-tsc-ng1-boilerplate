@@ -15,7 +15,7 @@ function buildScript(project, watch, callback) {
     * p-parameter points to the project folder with the tsconfig.json.
     * outFile points to the output file for the compiled bundle.
     */
-    var cmd = 'node_modules/.bin/tsc -p ' + project + ' --outFile ' + outFile;
+    var cmd = 'node_modules\\.bin\\tsc -p ' + project + ' --outFile ' + outFile;
 
     if (watch)
        cmd = cmd + ' -w';
