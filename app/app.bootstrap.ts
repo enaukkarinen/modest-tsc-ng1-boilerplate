@@ -1,4 +1,4 @@
-/// <reference path="typings/browser.d.ts"/>
+/// <reference path="typings/index.d.ts"/>
 
 angular.module('app', [
     "ngRoute",
@@ -6,6 +6,6 @@ angular.module('app', [
 ]);
 
 require('templates');
-require(['app'], (appModule:any) => {
-    appModule.start();
-});
+var app = require('app');
+app.start();
+
