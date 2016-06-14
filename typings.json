@@ -6,6 +6,7 @@
   "resolution": "app/typings",
   "globalDependencies": {
     "angular": "registry:dt/angular#1.5.0+20160614091201",
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236",
     "node": "registry:dt/node#6.0.0+20160613154055"
   }
 }
