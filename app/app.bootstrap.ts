@@ -1,7 +1,7 @@
 /// <reference path="typings/browser.d.ts"/>
 
 angular.module('app', [
-            "ngRoute",
+    "ngRoute",
     "app.templates" 
 ]);
 
